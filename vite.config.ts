@@ -21,8 +21,8 @@ export default defineConfig({
         short_name: 'ST Warehouse',
         description:
           'Packing, packlists, stocktaking and transport for trail running events. Works offline.',
-        theme_color: '#16553e',
-        background_color: '#f4f6f4',
+        theme_color: '#17788c',
+        background_color: '#f3f7f8',
         display: 'standalone',
         orientation: 'portrait',
         start_url: './',
