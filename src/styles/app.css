@@ -678,7 +678,7 @@ button, input, select, textarea {
 .toast {
   padding: var(--space-3) var(--space-4);
   border-radius: var(--radius);
-  background: var(--green-900);
+  background: var(--teal-900);
   color: #fff;
   font-weight: 600;
   box-shadow: var(--shadow-lg);
@@ -935,7 +935,7 @@ button, input, select, textarea {
 /* SingleTrack logo strip on the home screen. The artwork is white-only, so it
    always sits on the brand teal regardless of theme. */
 .brand-banner {
-  background: #27a0b5;
+  background: var(--teal-500);
   border-radius: var(--radius);
   padding: 16px 20px;
   margin-bottom: 16px;

@@ -9,13 +9,15 @@
 :root {
   color-scheme: light dark;
 
-  /* Brand — eucalypt green chrome with a trail-marker orange for actions. */
-  --green-900: #0b2e22;
-  --green-800: #10402f;
-  --green-700: #16553e;
-  --green-600: #1d6b4e;
-  --green-500: #2a8a66;
-  --green-100: #d8ece3;
+  /* Brand — the SingleTrack teal from the logo (#2ba0b5) for chrome, with a
+     trail-marker orange for actions. The logo teal itself is too light to
+     carry white text, so the header and brand text sit two steps darker. */
+  --teal-900: #0b3540;
+  --teal-800: #10505f;
+  --teal-700: #17788c;
+  --teal-600: #1f8ea3;
+  --teal-500: #2ba0b5;
+  --teal-100: #d5eef2;
   --orange-600: #c2410c;
   --orange-500: #ea580c;
   --orange-400: #fb923c;
@@ -32,24 +34,24 @@
   --blue-100: #dbeafe;
 
   /* Light surfaces */
-  --bg: #f4f6f4;
+  --bg: #f3f7f8;
   --surface: #ffffff;
-  --surface-2: #eef2ef;
-  --surface-sunken: #e6ebe7;
-  --border: #d3dcd6;
-  --border-strong: #adbbb2;
-  --text: #101614;
-  --text-muted: #55655c;
-  --text-faint: #7a8b81;
+  --surface-2: #ebf2f3;
+  --surface-sunken: #e2ebed;
+  --border: #cfdcdf;
+  --border-strong: #a8bcc1;
+  --text: #0f1a1d;
+  --text-muted: #506367;
+  --text-faint: #778a8f;
 
   --accent: var(--orange-500);
   --accent-ink: #ffffff;
-  --brand: var(--green-700);
+  --brand: var(--teal-700);
   --brand-ink: #ffffff;
   /* The header band is its own pair: the brand colour has to stay legible as
      text on the page background, which pulls it in a different direction from
      a colour that works as a large filled bar. */
-  --header-bg: var(--green-700);
+  --header-bg: var(--teal-700);
   --header-ink: #ffffff;
 
   --ok: #15803d;
@@ -90,9 +92,9 @@
   /* Minimum comfortable target for a gloved thumb. */
   --tap: 48px;
 
-  --shadow-sm: 0 1px 2px rgb(16 22 20 / 8%);
-  --shadow: 0 2px 8px rgb(16 22 20 / 10%);
-  --shadow-lg: 0 8px 28px rgb(16 22 20 / 18%);
+  --shadow-sm: 0 1px 2px rgb(15 26 29 / 8%);
+  --shadow: 0 2px 8px rgb(15 26 29 / 10%);
+  --shadow-lg: 0 8px 28px rgb(15 26 29 / 18%);
 
   --header-h: 56px;
   --nav-h: 64px;
@@ -107,22 +109,22 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --bg: #0d1210;
-    --surface: #161d1a;
-    --surface-2: #1d2622;
-    --surface-sunken: #101614;
-    --border: #2c3833;
-    --border-strong: #43534c;
-    --text: #eef3f0;
-    --text-muted: #9db0a6;
-    --text-faint: #74877d;
+    --bg: #0b1416;
+    --surface: #121e21;
+    --surface-2: #18262a;
+    --surface-sunken: #0e181a;
+    --border: #27383c;
+    --border-strong: #3f545a;
+    --text: #edf4f5;
+    --text-muted: #9cb3b8;
+    --text-faint: #73898e;
 
     --accent: var(--orange-400);
     --accent-ink: #21140a;
-    --brand: var(--green-500);
-    --brand-ink: #04140d;
-    --header-bg: #10402f;
-    --header-ink: #eef3f0;
+    --brand: var(--teal-500);
+    --brand-ink: #04191d;
+    --header-bg: var(--teal-800);
+    --header-ink: #edf4f5;
 
     --ok: #4ade80;
     --ok-bg: #10321f;
@@ -140,22 +142,22 @@
 }
 
 :root[data-theme='dark'] {
-  --bg: #0d1210;
-  --surface: #161d1a;
-  --surface-2: #1d2622;
-  --surface-sunken: #101614;
-  --border: #2c3833;
-  --border-strong: #43534c;
-  --text: #eef3f0;
-  --text-muted: #9db0a6;
-  --text-faint: #74877d;
+  --bg: #0b1416;
+  --surface: #121e21;
+  --surface-2: #18262a;
+  --surface-sunken: #0e181a;
+  --border: #27383c;
+  --border-strong: #3f545a;
+  --text: #edf4f5;
+  --text-muted: #9cb3b8;
+  --text-faint: #73898e;
 
   --accent: var(--orange-400);
   --accent-ink: #21140a;
-  --brand: var(--green-500);
-  --brand-ink: #04140d;
-  --header-bg: #10402f;
-  --header-ink: #eef3f0;
+  --brand: var(--teal-500);
+  --brand-ink: #04191d;
+  --header-bg: var(--teal-800);
+  --header-ink: #edf4f5;
 
   --ok: #4ade80;
   --ok-bg: #10321f;
